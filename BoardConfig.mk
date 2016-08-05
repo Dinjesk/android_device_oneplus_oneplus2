@@ -152,9 +152,8 @@ TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 
 # Init
 TARGET_UNIFIED_DEVICE := true
-TARGET_INIT_VENDOR_LIB := libinit_msm
+TARGET_INIT_VENDOR_LIB := libinit_oneplus2
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
-TARGET_LIBINIT_DEFINES_FILE := $(PLATFORM_PATH)/init/init_oneplus2.cpp
 
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
@@ -232,5 +231,6 @@ TW_THEME := portrait_hdpi
 BOARD_HAS_NO_REAL_SDCARD := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+TW_DEFAULT_LANGUAGE := en-US
 TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_CRYPTO := true

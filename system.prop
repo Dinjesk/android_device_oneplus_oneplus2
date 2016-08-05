@@ -2,6 +2,7 @@
 
 ro.build.product=OnePlus2
 ro.product.device=OnePlus2
+ro.product.model=OnePlus2
 ro.build.description=OnePlus2-user 6.0.1 MMB29M 31 dev-keys
 ro.build.fingerprint=OnePlus/OnePlus2/OnePlus2:6.0.1/MMB29M/1447840820:user/release-keys
 
@@ -116,6 +117,50 @@ ro.qc.sdk.camera.facialproc=false
 
 # Time services
 persist.timed.enable=true
+
+## Tweaks
+# Enable HSUPA for faster upload speeds
+ro.ril.hsxpa=3
+# Use Google DNS for faster DNS resolution
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4
+# Faster boot
+dalvik.vm.dexopt-flags=o=v,
+dalvik.vm.boot-dex2oat-threads=4
+dalvik.vm.dex2oat-threads=2
+dalvik.vm.image-dex2oat-threads=4
+# Video acceleration / GPU rendering
+video.accelerate.hw=1
+debug.sf.hw=1
+debug.egl.profiler=1
+debug.egl.hw=1
+# Do not check JNI (little performance boost without disadvantages)
+ro.kernel.android.checkjni=0
+ro.kernel.checkjni=0
+# 10 fingers multi touch
+ro.product.max_num_touch=10
+ro.product.multi_touch_enabled=true
+# Mimimum pointer duration for better gaming experience without disadvantages
+ro.min_pointer_dur=1
+# Much faster responsiveness of touch screen
+windowsmgr.max_events_per_sec=1400
+# Faster UI rendering / building without negative effects
+ro.min.fling_velocity=6400
+ro.max.fling_velocity=12800
+# Better camera / picture quality
+ro.media.dec.jpeg.memcap=8000000
+ro.media.enc.hprof.vid.bps=8000000
+# 13 megapixels camera
+ro.media.capture.maxres=13m
+# High panorama resolution
+ro.media.panorama.defres=3264x1840
+ro.media.panorama.frameres=1280x720
+# Enable RAW support
+ro.camcorder.videoModes=true
+# 65 FPS for video
+ro.media.enc.hprof.vid.fps=65
+# Maximum JPEG quality
+ro.media.enc.jpeg.quality=100
 
 ## Tweaks
 # Enable HSUPA for faster upload speeds
